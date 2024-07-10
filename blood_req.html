@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="bloodreqpage.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="topnav" id="myTopnav">
+                        <img id="logo" class="img-fluid" src="main-logo-transformed.png">
+                        <ul>
+                            <li><a class="nav-link" href="home.html">Home</a></li>
+                            <li><a class="nav-link" >Blood Request</a></li>
+                            <li><a class="nav-link" href="findbloodbank.html">Blood Bank</a></li>
+                            <li><a class="nav-link" href="finddonor.html">Find Donor</a></li>
+                            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bgpic">
+        <div class="req-container">
+            <div class="req1">
+                <pre style="font-family: Georgia, serif;">
+     Blood
+     Request!!
+                </pre>
+            </div>
+            <div class="req2" >
+                <pre style="font-family: 'Brush Script MT', cursive;">      Opportunities knock the door sometimes,
+      so don't let it go and donate blood!
+                </pre>
+            </div>
+        </div>
+        <div class="data">
+            <p>Data not Found...</p>
+            <p><a href="#" onclick="openLoginPopup()" class="btn12">Login</a> to get your Data.</p>
+        </div>
+        <div class="login-popup" id="loginPopup">
+            <div class="login-popup-content">
+                <div class="loginquote">
+                    <img src="login3.jpg" alt="Donate Blood">
+                </div>
+                <div class="loginform">
+                    <h2 style="text-align:center">Login</h2>
+                    <form class="login-form">
+                        <span class="close-button" onclick="closeLoginPopup()">&times;</span>
+                        <label for="mobilenumber">Mobile Number</label>
+                        <input type="tel" id="mobilenumber" pattern="[789][0-9]{9}" placeholder="Enter Mobile Number" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <br>
+                        <button type="submit" class="button1">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openLoginPopup() {
+            document.getElementById("loginPopup").style.display = "block";
+        }
+        function closeLoginPopup() {
+            document.getElementById("loginPopup").style.display = "none";
+        }
+    </script>
+</body>
+</html>

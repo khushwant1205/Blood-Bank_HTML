@@ -1,0 +1,574 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 0.5em; 
+}
+
+::-webkit-scrollbar-track {
+    background-color:black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:black;
+}
+.topnav {
+    overflow: hidden;
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 4px;
+    z-index: 999;
+}
+
+.topnav img {
+    float: left;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+#logo {
+    position: absolute;
+    top: 1px;
+    left: 1px; 
+    height: 45px;
+    width: 45px;
+}
+
+.topnav ul {
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.topnav li {
+    margin-right: 10px;
+}
+
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #ff0303;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    display: none;
+}
+.bgpic {
+    background-image: url('may18_22_146426075.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110%;
+    overflow: hidden;
+    background-position: center;
+    position: relative; 
+}
+
+.bgpic::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.req-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: yellow;
+}
+
+.req1{
+    margin-bottom:25px;
+    font-size: 70px;
+    color: red;
+    margin-left: 20px;
+    margin-top:-390px;
+    margin-right:20px;
+}
+.req2 {
+    font-size: 42px;
+    line-height: 1.5;
+    width: 300px; 
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: -125px;
+}
+
+.formss {
+    position: absolute;
+    top: 50%;
+    right: 260px;
+    transform: translateY(-50%);
+    color: white;
+    width: 300px; 
+    padding :0% 7% 0% 4%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right:680px;
+    margin-top:110px;
+}
+
+.formss form {
+    display: block;
+    text-align: left;
+}
+
+.formss label, .formss input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formss input {
+    width: 118%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.formss input[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 40%;
+    margin-left: 7rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.formss input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.popup{
+    width:400px;
+    background:#ffff;
+    border-radius:6px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align:center;
+    padding:0 30px 30px;
+    color:#333;
+    visibility:hidden;
+    transition :trasform0.94s,top 0.94s;
+
+}
+.open-popup{
+    visibility:visible;
+    top:50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+.popup img{
+    width:100px;
+    margin-top:-50px;
+    border-radius:50%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+.popup.h2{
+    font-size:38px;
+    font-weight:500;
+    margin:30px 0 10px;
+
+}
+.popup button{
+    width :100%;
+    margin-top:50px;
+    padding:10px 0;
+    background:#6FD649;
+    color:#ffff;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius:4px;
+    cursor:pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+
+}
+@media (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color:transparent;
+    }
+    .bgpic{
+        height: 109%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .topnav a {
+        font-size: 12px;
+    }
+    .req1{
+        font-size: 49px;
+        font-family:Georgia, serif;
+        color: red;
+        margin-top: -340px;
+        margin-bottom: 110px;
+        margin-left:-35px;
+        
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left:-35px;
+
+        font-family: 'Brush Script MT', cursive;
+    }
+    .formss {
+        position: absolute;
+        top: 20%;
+        margin-right: -210px;
+        color: white;
+        width: 75%;
+        padding : 0px 1px 0px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 390px;
+    }
+    .formss form {
+        display: block;
+        text-align: left;
+    }
+    .formss label, .formss input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .formss input {
+        width: 90%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formss input[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        width: 40%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .formss input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 118%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        font-size: 49px;
+        font-family:Georgia, serif;
+        color: red;
+        margin-top: -340px;
+        margin-bottom: 100px;
+        margin-left:-35px;
+        
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left:-35px;
+
+        font-family: 'Brush Script MT', cursive;
+    }
+    .formss {
+        position: absolute;
+        top: 20%;
+        margin-right: 30px;
+        color: white;
+        width: 50%;
+        padding : 0px 1px 0px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 390px;
+    }
+    .formss form {
+        display: block;
+        text-align: left;
+    }
+    .formss label, .formss input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .formss input {
+        width: 90%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formss input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        width: 40%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .formss input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 120%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        font-size: 49px;
+        font-family:Georgia, serif;
+        color: red;
+        margin-top: -340px;
+        margin-bottom: 100px;
+        margin-left:-35px;
+        
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left:-35px;
+
+        font-family: 'Brush Script MT', cursive;
+    }
+    .formss {
+        position: absolute;
+        top: 20%;
+        margin-right: 110px;
+        color: white;
+        width: 50%;
+        padding : 0px 1px 0px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 390px;
+    }
+    .formss form {
+        display: block;
+        text-align: left;
+    }
+    .formss label, .formss input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .formss input {
+        width: 90%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formss input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        width: 40%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .formss input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 118%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        font-size: 49px;
+        font-family:Georgia, serif;
+        color: red;
+        margin-top: -340px;
+        margin-bottom: 100px;
+        margin-left:-35px;
+        
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left:-35px;
+
+        font-family: 'Brush Script MT', cursive;
+    }
+    .formss {
+        position: absolute;
+        top: 20%;
+        margin-right: 278px;
+        color: white;
+        width: 40%;
+        padding : 0px 1px 0px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 390px;
+    }
+    .formss form {
+        display: block;
+        text-align: left;
+    }
+    .formss label, .formss input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .formss input {
+        width: 90%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formss input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        width: 40%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .formss input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        font-size: 49px;
+        font-family:Georgia, serif;
+        color: red;
+        margin-top: -340px;
+        margin-bottom: 90px;
+        margin-left:-35px;
+        
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left:-35px;
+
+        font-family: 'Brush Script MT', cursive;
+    }
+    .formss {
+        position: absolute;
+        top: 20%;
+        margin-right: 450px;
+        color: white;
+        width: 35%;
+        padding : 0px 1px 0px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 390px;
+    }
+    .formss form {
+        display: block;
+        text-align: left;
+    }
+    .formss label, .formss input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .formss input {
+        width: 90%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .formss input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        width: 40%;
+        margin-left: 25%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .formss input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}

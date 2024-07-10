@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="topnav" id="myTopnav">
+                        <img id="logo" class="img-fluid" src="main-logo-transformed.png">
+                        <ul>
+                            <li><a class="nav-link" >Home</a></li>
+                            <li><a class="nav-link" href="blood_req.html">Blood Request</a></li>
+                            <li><a class="nav-link" href="findbloodbank.html">Blood Bank</a></li>
+                            <li><a class="nav-link" href="finddonor.html">Find Donor</a></li>
+                            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+                            <li><button onclick="openLoginPopup()" class="nav-link1">Login</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="background">
+        <br>
+        <br>
+        <div class="container">
+            <div class="login-popup" id="loginPopup">
+                <div class="login-popup-content">
+                    <span class="close-button" onclick="closeLoginPopup()">&times;</span>
+                    <div class="loginquote">
+                        <img src="login3.jpg" alt="Donate Blood">
+                    </div>
+
+                    <div class="loginform">
+                        <h2 style="text-align:center">Login</h2>
+                        <form class="login-form">
+                            <label for="mobilenumber">Mobile Number</label>
+                            <input type="tel" pattern="[789][0-9]{9}" id="mobilenumber" placeholder="Enter Mobile Number" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" required>
+                            <br>
+                            <button type="submit" class="button1">Login</button>
+                            <a class="button2" href="#RegisterPopup" onclick="closeLoginPopup()">Register</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home">
+                <div class="hometext">
+                    <h1 class="p1">
+                        You Don't Have To BE A Doctor To Save lives 
+                    </h1>
+                    <h1 class="p11">
+                        Just Donate Blood
+                    </h1>
+                    <p class="p2">
+                        It's safe, it's simple, And it saves lives
+                    </p>
+                </div>
+            <br>
+                <div class="linkforms">
+                    <p>Donate Blood, Donate Life</p>
+                    <a class="button3" href="#NeedBloodpopup" style="margin-top: 1000px;">Need Blood</a><br><br><br>
+                    <a class="button33" href="#RegisterPopup">Login/Register</a><br><br><br>
+                    <a class="button333" href="finddonor.html">Find Donor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLoginPopup() {
+            document.getElementById("loginPopup").style.display = "block";
+        }
+        function closeLoginPopup() {
+            document.getElementById("loginPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="NeedBloodpopup" id="NeedBloodpopup">
+        <div class="NeedBlood-popup-content">
+            <div class="needblood-form">
+                <h3 class="mb-4">Post Blood Request</h3>
+                <form onsubmit="return openbloodpopup(event)">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Blood Group</label>
+                            <select class="form-control" name="blood_group" required>
+                                <option value="SelectBG">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="any">Any</option>
+                            </select>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Reason</label>
+                            <select class="form-control" name="reason" required>
+                                <option value="Select">Select Reason</option>
+                                <option value="Emergency">Emergency Procedure</option>
+                                <option value="Surgery">Surgery</option>
+                                <option value="Accident">Accident</option>
+                                <option value="pp">Pregnancy Procedure</option>
+                                <option value="others">Others</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Type</label>
+                            <select class="form-control" name="type" required>
+                                <option value="SelectBG">Select Type</option>
+                                <option value="blood">Blood</option>
+                                <option value="plasma">Plasma</option>
+                                <option value="cell">Cell</option>
+                            </select>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>No of Units Required</label>
+                            <input type="number" min="1" max="30" class="form-control" name="units_required" required placeholder="Enter Units">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Contact Person Name</label>
+                            <input type="text" class="form-control" name="contact_person_name" required placeholder="Enter Name">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Contact Person Blood Group</label>
+                            <select class="form-control" required name="contact_person_blood_group">
+                                <option value="SelectBG">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="any">Any</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Select Date And Time</label>
+                            <input type="datetime-local" required class="form-control" name="date_and_time">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Contact Number</label>
+                            <input type="number" pattern="[789][0-9]{9}" class="form-control" required name="contact_number" placeholder="Enter Contact Number">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Hospital Name</label>
+                            <input type="text" class="form-control" required name="hospital_name" placeholder="Enter Hospital Name">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>City</label>
+                            <input type="text" class="form-control" required name="city" placeholder="Enter City">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Address</label>
+                            <textarea class="form-control" style="resize: none;" name="message" required rows="2" placeholder="Enter Address"></textarea>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Message</label>
+                            <textarea class="form-control" style="resize: none;" name="message" required rows="2" placeholder="Enter Message"></textarea>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn12" onclick="openbloodpopup()">Submit</button>
+                </form>
+            
+                <a class="popup__close1" href="#">&times;</a>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="bloodpopup" id="bloodpopup">
+        <img src="submit-tick.png" alt="Submission Successful">
+        <h2>Thank you</h2>
+        <p>Your details have been submitted</p>
+        <button type="button" onclick="closebloodpopup()">OK</button>
+    </div>
+
+    <script>
+        let bloodpopup = document.getElementById("bloodpopup");
+        function openbloodpopup(event) {
+            event.preventDefault();
+            bloodpopup.classList.add("open-bloodpopup");
+            setTimeout(closebloodpopup, 90000); // Adjust the delay as needed
+            return false; // Prevent form submission
+        }
+        function closebloodpopup() {
+            bloodpopup.classList.remove("open-bloodpopup");
+        }
+    </script>
+
+    <div class="Registerpopup" id="RegisterPopup">
+        <div class="Register-popup-content">
+            <div class="regestration-form">
+                <h1 class="mb-4">Registration Form</h1>
+                <form onsubmit="openpopup(event)">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required name="name" placeholder="Enter Your Name">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Age</label>
+                            <input type="number" min="15" class="form-control" required name="age" placeholder="Enter Your Age">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Email</label> 
+                            <input type="email" class="form-control"  required name="email" placeholder="Enter Your Email">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Password</label>
+                            <input type="password" class="form-control" required name="password" placeholder="Enter Your Password">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Blood Group</label>
+                            <select class="form-control" name="blood_group" required>
+                                <option value="SelectBG">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Gender</label>
+                            <select class="form-control" name="gender" required>
+                                <option value="SelectBG">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Mobile Number</label>
+                            <input type="tel" class="form-control" pattern="[789][0-9]{9}" required name="mobile_number" placeholder="Enter Your Mobile No">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>Address</label>
+                            <input type="text" class="form-control" required name="address" placeholder="Enter Your Address">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>District</label>
+                            <input type="text" class="form-control" required name="district" placeholder="Enter Your District">
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label>State</label>
+                            <input type="text" class="form-control" required name="state" placeholder="Enter Your State">
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn12" onclick="openpopup()">Register</button>
+                    <br>
+        
+                    <div class="logintext">
+                        <div class="col-md-12">
+                            <p  class="logintextbutton">Already a Member?<a onclick="openLoginPopup1()" class="popup__close23" href="#">Login</a></p>
+                        </div>
+                    </div>
+                </form>
+        
+                <div class="popup" id="popup">
+                    <img src="submit-tick.png">
+                    <h2>Thank you</h2>
+                    <p>you details has been registered</p>
+                    <button type="button" onclick="closepopup()">OK</button>
+                </div>
+
+                <a class="popup__close2" href="#">&times;</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(event){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+            setTimeout(closepopup,90000);
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script>
+        function openLoginPopup1() {
+            document.getElementById("loginPopup").style.display = "block";
+        }
+        function closeLoginPopup() {
+            document.getElementById("loginPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="container1">
+        <div class="row">
+            <div class="cards">
+                <div class="card1">
+                    <div class="flap1">
+                        <p>1 Print of blood can save up to 3 lives. It's great, isn't it?</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="flap2">
+                        <p>Blood cannot be manufactured, it can only come from volunteer donors.</p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="flap3">
+                        <p>Donors can give blood every 56 days, Platelet donors can give every 7 days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const cards = document.querySelectorAll(".cards > div");
+                cards.forEach((card) => {
+                    card.addEventListener("mouseover", () => {card.classList.add("active");});
+                    card.addEventListener("mouseout", () => {card.classList.remove("active");});
+                });
+            });
+        </script>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="imp1">
+                    <h3 class="blood-facts" style="color: red;">Blood Donation</h3>
+                    <ul>
+                        <li>Why Not? Stop Making Excuses</li>
+                        <li>Every year our nation requires about 5 Crore units of blood, out of which only a meager 2.5 Crore units of blood are available.</li>
+                        <li>The gift of blood is the gift of life. There is no substitute for human blood.</li>
+                        <li>Every two seconds someone needs blood.</li>
+                        <li>More than 38,000 blood donations are needed every day.</li>
+                        <li>A total of 30 million blood components are transfused each year.</li>
+                        <li>The average red blood cell transfusion is approximately 3 pints.</li>
+                        <li>Sickle cell patients can require frequent blood transfusions throughout their lives.</li>
+                        <li>The blood type most often requested by hospitals is Type O.</li>
+                        <li>More than 1 million new people are diagnosed with cancer each year. Many of them will need blood, sometimes daily, during their chemotherapy treatment.</li>
+                        <li>A single car accident victim can require as many as 100 units of blood.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="image-container">
+                    <img src="moving-image.png" alt="Blood Donation" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="eligibility-container">
+                        <h3>Lets others benefit from your good health. Do donate blood if...</h3>
+                        <ul>
+                            <li>You are between the age group of 18-60 years.</li>
+                            <li>Your weight is 45 kgs or more.</li>
+                            <li>Your haemoglobin is 12.5 gm% minimum.</li>
+                            <li>Your last blood donation was 3 months earlier.</li>
+                            <li>You are healthy and have not suffered from malaria, typhoid, or other transmissible diseases in the recent past.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container5">
+            <section id="sec-5" >
+                <h1>Join the Cause</h1>
+                <p>Join our cause and help us save more lives. Everyone should have the right to get a blood transfusion.</p>
+                <div class="row cause" >
+                    <div class="block">
+                        <div class="hovicon effect-3">
+                            <i class="fas fa-registered"></i>
+                        </div>
+                        <h5 style="margin-left: 29px;">Register</h5>
+                    </div>
+                    <div class="block">
+                        <div class="hovicon effect-3">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h5 style="margin-left: -22px;">Post a Blood Request</h5>
+                    </div>
+                    <div class="block">
+                        <div class="hovicon effect-3">
+                            <i class="fa fa-mobile-phone" style="font-size:80px;margin-top:6px;"></i>
+                        </div>
+                        <h5 style="margin-left: 15px;">Get Notified</h5>
+                    </div>
+                    <div class="block">
+                        <div class="hovicon effect-3">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 style="margin-left: 10px;">Forever Free</h5>
+                    </div>
+                    <div class="block">
+                        <div class="hovicon effect-3">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h5 style="margin-left: 20px;">Save a Life</h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container-fluid" >
+            <div class="content">
+                <div  class="left-side" >
+                    <p>The ingenuity of the Blood Wallet is that it simply requires a volunteer to register on www.bloodwallet.com and submit his/her contact details. Blood Wallet does not collect or store blood. Blood being a highly perishable, we insist that it should be stored in the best vessel – The Human Body!</p>
+                </div>
+                <div class="right-side">
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p>734, 2nd Floor, Malhar Road, Near Hero Bakery,<br> Opp PNB Bank, Gurdev Nagar,<br> Ludhiana, Punjab 141001</p>
+                    </div>
+                    <div class="points">
+                        <h3>Points of Contact</h3>
+                        <ul>
+                            <li>Email: info@bloodwallet.com</li>
+                            <li>Phone: +91-1234567890</li>
+                            <li>Website: www.bloodwallet.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Containers are used to pad the content inside of them, 
+    and there are two container classes available: The .container class provides a responsive fixed width container. 
+    The .container-fluid class provides a full width container, spanning the entire width of the viewport.-->

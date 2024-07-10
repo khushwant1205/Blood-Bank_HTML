@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Donor</title>
+    <link rel="stylesheet" href="finddonorpage.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="topnav" id="myTopnav">
+                        <img id="logo" class="img-fluid" src="main-logo-transformed.png">
+                        <ul>
+                            <li><a class="nav-link" href="home.html">Home</a></li>
+                            <li><a class="nav-link" href="blood_req.html">Blood Request</a></li>
+                            <li><a class="nav-link" href="findbloodbank.html">Blood Bank</a></li>
+                            <li><a class="nav-link" >Find Donor</a></li>
+                            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bgpic">
+        <div class="req-container">
+            <div class="req1">
+                <pre style="font-family: Georgia, serif;">
+     FIND DONOR
+                </pre>
+            </div>
+            <div class="req2" >
+                <pre style="font-family: 'Brush Script MT', cursive;">      It feels good. It make me proud.
+            I am a blood donor.
+                </pre>
+            </div>
+        </div>
+        <div class="formss">
+            <br><br>
+            <div class="req_form">
+                <form onsubmit="openpopup(event)"> 
+                    <label for="group">Blood Group</label>
+                    <select name="blood_group" required class="form_grp">
+                        <option value="SelectBG">Select Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="any">Any</option>
+                    </select>
+                    <label for="group">District</label>
+                    <input type="text" id="group" name="fname" required placeholder="Enter your District ">
+                    <label for="group">State</label>
+                    <input type="text" id="group" name="fname" required placeholder="Enter your State ">
+                    <br>
+                    <input type="submit" value="Submit" class ="btn" onclick="openpopup()">
+                    
+                </form>
+                <div class="popup" id="popup">
+                    <img src="submit-tick.png">
+                    <h2>Thank you</h2>
+                    <p>you details has been submitted</p>
+                    <button type="button" onclick="closepopup()">OK</button>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(event){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+            setTimeout(closepopup,90000);
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

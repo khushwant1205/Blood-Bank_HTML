@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Blood Bank</title>
+    <link rel="stylesheet" href="findbloodbankpage.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="topnav" id="myTopnav">
+                        <img id="logo" class="img-fluid" src="main-logo-transformed.png">
+                        <ul>
+                            <li><a class="nav-link" href="home.html">Home</a></li>
+                            <li><a class="nav-link" href="blood_req.html">Blood Request</a></li>
+                            <li><a class="nav-link" >Blood Bank</a></li>
+                            <li><a class="nav-link" href="finddonor.html">Find Donor</a></li>
+                            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bgpic">
+        <div class="req-container">
+            <div class="req1">
+                <pre style="font-family: Georgia, serif;">
+     Find Blood Bank
+                </pre>
+            </div>
+            <div class="req2" >
+                <pre style="font-family: 'Brush Script MT', cursive;">      The Blood Donor of today may be
+      recipient of tomorrow
+                </pre>
+            </div>
+        </div>
+        <div class="formss">
+            <br><br>
+            <div class="req_form">
+                <form onsubmit="openpopup(event)">
+                    <label for="fname">State</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Enter your State ">
+                    <label for="District">District</label>
+                    <input type="text" id="District" name="lname" required placeholder="Enter your District">
+                    <label for="add">City</label>
+                    <input type="text" id="add" name="lname" required placeholder="Enter your City">
+                    <br>
+                    <input type="submit" value="Submit" class ="btn" onclick="openpopup()">
+                </form>
+            </div>
+            <div class="popup" id="popup">
+                <img src="submit-tick.png">
+                <h2>Thank you</h2>
+                <p>you details has been submitted</p>
+                <button type="button" onclick="closepopup()">OK</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(event){
+            event.preventDefault();
+            popup.classList.add("open-popup");
+            setTimeout(closepopup,90000);
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

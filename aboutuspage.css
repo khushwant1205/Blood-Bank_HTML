@@ -1,0 +1,316 @@
+::-webkit-scrollbar {
+    width: 0.5em; 
+}
+
+::-webkit-scrollbar-track {
+    background-color:black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:black;
+}
+.topnav {
+  overflow: hidden;
+  position:absolute;
+  margin-top: -220px;
+  margin-left: -4px;
+  z-index: 999;
+}
+.topnav img {
+  float: left;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+#logo {
+position: absolute;
+top: 1px;
+left: 1px; 
+height: 45px;
+width: 45px;
+}
+
+.topnav ul {
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.topnav li {
+  margin-right: 10px;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 11px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #ff0303;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.icon {
+display: none;
+}
+body {
+background-color: black;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('aboutusb.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 20px;
+}
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.textcenter001{
+  margin-left:530px;
+  color: white;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+::-webkit-scrollbar {
+width: 0.5em; 
+}
+
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+background-color:transparent;
+}
+.topnav {
+  margin-top: -220px;
+  margin-left: 4px;
+}
+.topnav a {
+  font-size: 12px;
+}
+.content {
+flex-wrap: nowrap;
+}
+
+.left-side {
+margin-right: 20px;
+}
+}
+.u-section-1 {
+padding-top: 40px;
+padding-bottom: 40px;
+border-radius: 20px;
+}
+
+.u-image-1 {
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+height: auto;
+}
+
+.u-list-1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 40px;
+}
+
+.u-repeater-1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.u-list-item-1,
+.u-list-item-2,
+.u-list-item-3,
+.u-list-item-4 {
+width: 280px;
+margin: 20px;
+padding: 20px;
+text-align: center;
+background-color: #fff;
+border-radius: 20px;
+}
+
+.u-container-layout-1,
+.u-container-layout-2,
+.u-container-layout-3,
+.u-container-layout-4 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.u-icon-1,
+.u-icon-2,
+.u-icon-3,
+.u-icon-4 {
+display: inline-block;
+width: 60px;
+height: 60px;
+margin-bottom: 20px;
+}
+
+.u-text-1,
+.u-text-3,
+.u-text-5,
+.u-text-7 {
+margin-top: 0;
+font-size: 20px;
+}
+
+.u-text-2,
+.u-text-4,
+.u-text-6,
+.u-text-8 {
+margin-top: 0;
+}
+
+.u-text-8 a {
+text-decoration: none;
+color: inherit;
+transition: color 0.3s ease;
+}
+
+.u-text-8 a:hover {
+color: #000;
+}
+
+@media (max-width: 768px) {
+::-webkit-scrollbar {
+width: 0.5em; 
+}
+
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+background-color:transparent;
+}
+.u-list-item-1,
+.u-list-item-2,
+.u-list-item-3,
+.u-list-item-4 {
+width: 100%;
+}
+}
+.u-file-icon img {
+max-width: 50px; 
+height: auto;
+}
+section{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.container-fluid {
+margin-top: 20px; 
+}
+
+.left-side {
+width: 70%;
+float: left;
+}
+
+.right-side {
+width: 30%;
+float: right;
+}
+
+.address,
+.points {
+margin-bottom: 20px;
+}
+.contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px; 
+        max-width: 400px; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .contact-form textarea {
+        height: 120px;
+    }
+
+    .contact-form button {
+        background-color: #ff0303;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #c40000;
+    }
+body{
+    padding-top: 150px;
+}

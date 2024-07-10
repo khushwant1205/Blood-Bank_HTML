@@ -1,0 +1,624 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 0.5em; 
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background-color:black;
+}
+.topnav {
+    overflow: hidden;
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 4px;
+    z-index: 999;
+}
+.topnav img {
+    float: left;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+#logo {
+    position: absolute;
+    top: 1px;
+    left: 1px; 
+    height: 45px;
+    width: 45px;
+}
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.topnav li {
+    margin-right: 10px;
+}
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.topnav a:hover {
+    background-color: white;
+    color: #ff0303;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+.icon {
+    display: none;
+}
+.container {
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: -760px;
+}
+.bgpic {
+    background-image: url('bloodrequest-bgpic.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110%;
+    overflow: hidden;
+    background-position: center;
+    position: relative; 
+}
+.bgpic::before {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.req-container {
+    position: absolute;
+    top: 45%;
+    left: 18px;
+    transform: translateY(-50%);
+    color: yellow;
+}
+.req1{
+    margin-bottom: -26%;
+    font-size: 75px;
+    color:white;
+    margin-left: 45px;
+}
+.req2 {
+    font-size: 42px;
+    line-height: 1.5;
+    width: 300px; 
+    margin-left: 28px;
+    margin-bottom: 20px;
+}
+.data{
+    color: white;
+    margin-top: 250px;
+    margin-left: 850px;
+    font-size: 46px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+}
+.btn12{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 48px;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+}
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+.login-popup-content {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form label, .login-form input {
+    margin-bottom: 10px;
+}
+.login-form input[type="tel"],
+.login-form input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 500px;
+}
+.loginquote{
+    float: left;
+    height: 10px;
+    padding: 13px;
+    margin: -280px 850px 0px 1540px;
+    text-align: left;
+}
+.loginform{
+    float: right;
+    border-radius: 5px;
+    padding: 65px 180px 60px 180px;
+    background-color: #ff0303;
+    color: white;
+    margin: -270px 0px 0px 100px;
+}
+.close-button {
+    position: absolute;
+    top: -257px;
+    right: 23px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.button1 { 
+    width: 200px;
+    margin: 0px 0px 20px 155px;
+    padding: 6px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    body{
+        background-color: rgb(32, 32, 99);
+    }
+    
+    .bgpic{
+        height: 109%;
+    }
+    .topnav a {
+        font-size: 12px;
+    }
+    .req-container {
+        top: 53%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        font-size: 49px;
+        margin-top: -360px;
+        margin-bottom: -30%;
+        margin-left: 30px;
+    }
+    .req2 {
+        font-size: 30px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left: -4px;
+        font-family: 'Brush Script MT', cursive;
+    }
+    .data{
+        color: white;
+        margin-top: 370px;
+        margin-left: 70px;
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 350px;
+        height: 160px;
+        padding: 1px;
+    }
+    .btn12{
+        font-size: 30px;
+    }
+    .loginquote img{
+        float: none;
+        width: 450px;
+        height: 230px;
+        margin: 170px 970px 0px 770px;
+        border-radius: 5px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 133px 0px 0px 2323px;
+        width: 450px;
+    }
+    .login-form{
+        margin-top: -215px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .close-button {       
+        position: relative;
+        margin-top: 395px;
+        margin-bottom: -205px;
+        margin-left:455px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 118%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        margin-bottom: -28%;
+        font-size: 50px;
+        margin-top: -360px;
+        margin-left: 90px;
+    }
+    .req2 {
+        font-size: 35px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+    .data{
+        color: white;
+        margin-top: 390px;
+        margin-left: 170px;
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        padding: 1px;
+    }
+    .btn12{
+        font-size: 30px;
+    }
+    .loginquote img{
+        float: none;
+        width: 450px;
+        height: 230px;
+        margin: 170px 770px 0px 770px;
+        border-radius: 5px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 133px 0px 0px 2323px;
+        width: 450px;
+    }
+    .login-form{
+        margin-top: -215px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .close-button {       
+        position: relative;
+        margin-top: 395px;
+        margin-bottom: -205px;
+        margin-left:455px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+    }
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 120%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        margin-bottom: -25%;
+        font-size: 70px;
+        margin-top: -430px;
+        margin-left: 140px;
+    }
+    .req2 {
+        font-size: 38px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left: 120px;
+        font-family: 'Brush Script MT', cursive;
+    }
+    .data{
+        color: white;
+        margin-top: 400px;
+        margin-left: 220px;
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        padding: 1px;
+    }
+    .btn12{
+        font-size: 30px;
+    }
+    .loginquote img{
+        float: none;
+        width: 450px;
+        height: 230px;
+        margin: 170px 770px 0px 870px;
+        border-radius: 5px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 133px 0px 0px 2423px;
+        width: 450px;
+    }
+    .login-form{
+        margin-top: -215px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .close-button {       
+        position: relative;
+        margin-top: 395px;
+        margin-bottom: -205px;
+        margin-left:455px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+    }
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .bgpic{
+        height: 118%;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        margin-bottom: -22%;
+        font-size: 70px;
+        margin-top: -390px;
+        margin-left: 330px;
+    }
+    .req2 {
+        font-size: 42px;
+        line-height: 1.5;
+        margin-left: 260px;
+    }
+    .data{
+        color: white;
+        margin-top: 390px;
+        margin-left: 370px;
+        font-size: 35px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        padding: 1px;
+    }
+    .btn12{
+        font-size: 30px;
+    }
+    .loginquote img{
+        float: none;
+        width: 450px;
+        height: 230px;
+        margin: 170px 770px 0px 770px;
+        border-radius: 5px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 133px 0px 0px 2323px;
+        width: 450px;
+    }
+    .login-form{
+        margin-top: -215px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .close-button {       
+        position: relative;
+        margin-top: 395px;
+        margin-bottom: -205px;
+        margin-left:455px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+    }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .req-container {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .req1{
+        margin-bottom: -34%;
+        font-size: 74px;
+        margin-top: -150px;
+        margin-left: -20px;
+    }
+    .req2 {
+        font-size: 40px;
+        line-height: 1.5;
+        width: 300px; 
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+    .data{
+        color: white;
+        margin-top: 280px;
+        margin-left: 700px;
+        font-size: 42px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 500px;
+        height: 250px;
+        padding: 1px;
+    }
+    .btn12{
+        font-size: 42px;
+    }
+    .loginquote{
+        float: left;
+        height: 10px;
+        padding: 13px;
+        margin: -280px 890px 0px 1490px;
+        text-align: left;
+    }
+    .loginform{
+        float: right;
+        border-radius: 5px;
+        padding: 65px 120px 60px 120px;
+        background-color: #ff0303;
+        color: white;
+        margin: -270px 150px 0px 00px;
+    }
+    .login-form{
+        margin-top: -195px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 340px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 180px;
+        padding: 4px;
+        width: 120px;
+    }
+    .close-button {       
+        position: relative;
+        margin-top: 365px;
+        margin-bottom: -205px;
+        margin-left:595px;
+        margin-right: -100px;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+    }
+}

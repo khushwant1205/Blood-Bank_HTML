@@ -1,0 +1,2650 @@
+body {
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.background {
+    background-image:  url('mainpage-bgpic.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    position: relative; 
+    margin-bottom:190px;
+    margin-top:-115px;
+}
+.container-fluid {
+    position: absolute;
+    background-color: #222;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+#logo {
+    position: absolute;
+    top: 1px;
+    left: 1px; 
+    height: 45px;
+    width: 45px;
+}
+.topnav {
+    overflow: hidden;
+    position:absolute;
+    margin-top: -13px;
+    margin-left: -15px;
+    z-index: 999;
+}
+.topnav img {
+    float: left;
+    margin-right: 10px;
+}
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.topnav li {
+    margin-right: 10px;
+}
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.topnav a:hover {
+    background-color: white;
+    color: #ff0303;
+}
+.topnav a.active {
+    background-color: red;
+    color: white;
+}
+.nav-link1 {
+    margin-left: 813px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; 
+}
+.nav-link1:hover {
+    background-color: white; 
+    color: red;
+    padding: 10px
+}
+.container {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+}
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+.login-popup-content {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form label, .login-form input {
+    margin-bottom: 10px;
+}
+.login-form input[type="tel"],
+.login-form input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 500px;
+}
+.loginquote{
+    float: left;
+    height: 10px;
+    padding: 13px;
+    margin: -280px 850px 0px 1540px;
+    text-align: left;
+}
+.loginform{
+    float: right;
+    border-radius: 5px;
+    padding: 65px 180px 10px 180px;
+    background-color: #ff0303;
+    color: white;
+    margin: -270px 0px 0px 100px;
+}
+.close-button {
+    position: absolute;
+    top: -265px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.button1 { /* Login button in login form*/
+    width: 200px;
+    margin: 0px 0px 20px 155px;
+    padding: 6px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button2{ /* Register button in login form*/
+    width: 100px;
+    margin-left: 225px;
+    padding: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: red;
+    text-decoration: none;
+}
+.button2:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.p1{
+    margin-top: 120px;
+    color: white;
+    font-weight: bold;
+    font-family:cursive;
+    margin-left: -130px;
+}
+.p11{
+    color: white;
+    font-weight: bold;
+    font-family:cursive;
+    margin-left: -130px;
+}
+.p2{
+    color: white;
+    margin-left: -130px;
+    font-size: 18px;
+}
+.linkforms{
+    border-radius: 10px;
+    font-size: 18px;
+    color:black;
+    margin-right: 500px;
+    margin-top: 80px;
+    margin-left: 20px;
+    top: 0;
+    left: 0;
+    width: 38%;
+    height: 42%;
+    padding: 32px;
+    background-color:  rgba(255, 255, 255);
+    flex-direction: column;
+    animation: moveUpDown 2.2s infinite;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.linkforms p{
+    margin-top: -12px;
+    margin-bottom: 33px;
+    padding-left: 8px;
+    font-size: 19px;
+    color: red;
+    font-weight: bold;
+}
+.linkforms a:hover{
+    color: white;
+    text-decoration: none;
+}
+.linkforms a:active{
+    color: white;
+    text-decoration: none;
+}
+.linkforms a:visited{
+    color: white;
+    text-decoration: none;
+}
+.button3{
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    width: 0px;
+    color: white;
+    background-color: red;
+    margin-left: 28px;
+}
+.button33{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    width: 0px;
+    color: white;
+    background-color: red;
+    margin-left: 28px;
+}
+.button333{
+    padding: 15px;
+    padding-left: 53px;
+    padding-right: 53px;
+    border-radius: 30px;
+    width: 0px;
+    color: white;
+    background-color: red;
+    margin-left: 28px;
+}
+.mb-4{
+    text-align: center!important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.NeedBloodpopup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.64s ease-in-out;
+    z-index: 9999;
+    text-decoration: none;
+}
+.NeedBlood-popup-content {
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 80%;
+    transform: rotate(32deg);
+    transition: 0.64s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 800px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.NeedBloodpopup:target {
+    visibility: visible;
+    opacity: 1;
+}
+.NeedBloodpopup:target .NeedBlood-popup-content {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+.needblood-form{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-left: -280px;
+    margin-top: -600px;
+    z-index: 9999;
+}
+.needblood-form label, .needblood-form input{
+    margin-bottom: 10px;
+}
+.needblood-form option, .needblood-form select,
+.needblood-form input[type="text"], .needblood-form input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+}
+.btn{
+    text-align: center;
+    margin-left: 180px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.popup__close1 {
+    position: absolute;
+    top: -369px;
+    right: 415px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.popup__close1:hover{
+    text-decoration: none;
+    color: white;
+}
+.bloodpopup{
+    width:400px;
+    background:#ffff;
+    border-radius:6px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align:center;
+    padding:0 30px 30px;
+    color:#333;
+    visibility:hidden;
+    transition :transform 0.94s,top 0.94s;
+}
+.open-bloodpopup{
+    visibility:visible;
+    top:50%;
+    transform: translate(-50%,-50%)scale(1);
+    z-index: 9999;
+}
+.bloodpopup img{
+    width:100px;
+    margin-top:-50px;
+    border-radius:50%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+.bloodpopup h2{
+    font-size:38px;
+    font-weight:500;
+    margin:30px 0 10px;
+
+}
+.bloodpopup button{
+    width :100%;
+    margin-top:50px;
+    padding:10px 0;
+    background:#6FD649;
+    color:#ffff;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius:4px;
+    cursor:pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.Registerpopup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    text-decoration: none;
+}
+.Registerpopup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.64s ease-in-out;
+}
+.Register-popup-content {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 80%;
+    transform: rotate(32deg);
+    transition: 0.94s ease-in-out;
+}
+.Registerpopup:target {
+    visibility: visible;
+    opacity: 1;
+}
+.Registerpopup:target .Register-popup-content {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+.regestration-form{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    z-index: 9999;
+}
+.regestration-form label, .regestration-form input{
+    margin-bottom: 10px;
+}
+.regestration-form option, .regestration-form select,
+.regestration-form input[type="text"], .regestration-form input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+}
+.logintext{
+    margin-left: 200px;
+    margin-top: 15px;
+}
+.logintextbutton{
+    background-color: red;
+    border: none;
+    color: white;
+}
+.popup__close23 {
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -12px;
+    margin-right: 90px;
+}
+.popup__close2 {
+    position: absolute;
+    top: -29px;
+    right: 115px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.popup__close2:hover{
+    text-decoration: none;
+    color: white;
+}
+.popup{
+    width:400px;
+    background:#ffff;
+    border-radius:6px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align:center;
+    padding:0 30px 30px;
+    color:#333;
+    visibility:hidden;
+    transition :transform 0.94s,top 0.94s;
+}
+.open-popup{
+    visibility:visible;
+    top:50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+.popup img{
+    width:100px;
+    margin-top:-50px;
+    border-radius:50%;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+.popup.h2{
+    font-size:38px;
+    font-weight:500;
+    margin:30px 0 10px;
+}
+.popup button{
+    width :100%;
+    margin-top:50px;
+    padding:10px 0;
+    background:#6FD649;
+    color:#ffff;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius:4px;
+    cursor:pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.container1{
+    margin-top: -200px;
+    background-color: white;
+    margin-left: 10px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    margin-top: 50px;
+    position: relative;
+    width: 27%;
+    height: 250px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    margin-left: 50px;
+    font-family: "Merriweather", serif;
+    transition: transform 1s;
+}
+.flap1::before {
+    background: url('mainpage-card1.jpg');
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+.flap1::after {
+    background: url('mainpage-card1.jpg');
+    background-position: -200px;
+}
+.card1 .flap1::before {
+    background-image: url('mainpage-card1.jpg');
+    transform: translateX(0); 
+}
+.card1:hover .flap1::before {
+    transform: translateX(100%); 
+}
+.card1 .flap1::after {
+    background-image: url('mainpage-card1.jpg');
+    clip-path: polygon(0% 0, 0 0, 0 0%);
+}
+.card2{
+    margin-top: 50px;
+    position: relative;
+    width: 27%;
+    height: 250px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    margin-left: 8px;
+    font-family: "Merriweather", serif;
+    transition: transform 1s;
+}
+.flap2::before {
+    background: url('a person donating blood.jpg');
+    background-position: 100px;
+    background-repeat: no-repeat;
+}
+.flap2::after {
+    background: url('a person donating blood.jpg');
+    background-position: -200px;
+}
+.card2 .flap2::before {
+    background-image: url('a person donating blood.jpg');
+    transform: translateX(0); 
+}
+.card2:hover .flap2::before {
+    transform: translateX(100%); 
+}
+.card2 .flap2::after {
+    background-image: url('a person donating blood.jpg');
+    clip-path: polygon(0% 0, 0 0, 0 0%); 
+}
+.card3 {
+    margin-top: 50px;
+    margin-right: 50px;
+    position: relative;
+    width: 27%;
+    height: 250px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    font-family: "Merriweather", serif;
+    transition: transform 1s;
+}
+.flap3::before {
+    background: url('card3.jpg');
+    background-position: 100px;
+    background-repeat: no-repeat;
+}
+.flap3::after {
+    background: url('card3.jpg');
+    background-position: -200px;
+}
+.card3 .flap3::before {
+    background-image: url('card3.jpg');
+    transform: translateX(0); 
+}
+.card3:hover .flap3::before {
+    transform: translateX(100%); 
+}
+.card3 .flap3::after {
+    background-image: url('card3.jpg');
+    clip-path: polygon(0% 0, 0 0, 0 0%); 
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-20px);
+}
+.flap1,
+.flap2,
+.flap3 {
+    width: 100%;
+    height: 100%;
+}
+.flap1::before,
+.flap2::before,
+.flap3::before {
+    position: absolute;
+    content: "";
+    height: 600%;
+    width: 50%;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.flap1::after,
+.flap2::after,
+.flap3::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.card1.active .flap1::before,
+.card2.active .flap2::before,
+.card3.active .flap3::before {
+    transform: translateX(-150%);
+}
+.card1.active .flap1::after,
+.card2.active .flap2::after,
+.card3.active .flap3::after {
+    transform: translateX(150%);
+}
+.card1 .flap1::before,
+.card2 .flap2::before,
+.card3 .flap3::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+    background-position: center; 
+    margin-left: -10%;
+    margin-top: -10%;
+    background-size: 99%;
+}
+.card1 .flap1::after,
+.card2 .flap2::after,
+.card3 .flap3::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+}
+.card1:hover .flap1::after,
+.card2:hover .flap2::after,
+.card3:hover .flap3::after {
+    transform: translateX(100%); 
+}
+.col-lg-4{
+    margin-left: 70px;
+    font-size: 18px;
+}
+.image-container img {
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+    margin-left: 350px;
+    flex-direction: column;
+    animation: moveUpDown 2.2s infinite;
+}
+.eligibility-container {
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+.eligibility-container h3 {
+    font-weight: bold;
+}
+.eligibility-container ul {
+    list-style-type: none;
+}
+.eligibility-container ul li {
+    margin-bottom: 10px;
+}
+.container5{
+    background-color: white; 
+    padding-left: 30px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+    color: red;
+}
+.container5 h1{
+    margin-left: 580px;
+}
+.container5 h5{
+    color: red;
+}
+.container5 p{
+    color: red;
+    margin-left: 290px;
+    font-size: 18px;
+}
+.row cause{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block {
+    margin-left: 120px;
+    height: 150px;
+    color: white;
+}
+.hovicon {
+    font-size: 45px;
+    line-height: 90px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+.hovicon.small {
+    font-size: 20px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    margin: 7px;
+}
+.hovicon.mini {
+    font-size: 15px;
+    line-height: 32px;
+    width: 30px;
+    height: 30px;
+    margin: 7px;
+}
+.hovicon.auto-width {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+.hovicon:before {
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+/* Effect 3 */
+.hovicon.effect-3 {
+    box-shadow: 0 0 0 4px #fff;
+    transition: color 0.3s;
+}
+.hovicon.effect-3:after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    background: red;
+    transition: transform 0.2s, opacity 0.3s;
+}
+.hovicon.effect-3:hover:after {
+    transform: scale(1.3);
+    opacity: 0;
+    
+}
+.hovicon.effect-3:hover {
+    color: red;
+    border: 3px solid red;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-side,
+.right-side {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+.left-side p {
+    margin-top: 0;
+}
+.right-side h3 {
+    margin-top: 0;
+}
+.right-side ul {
+    list-style-type: none;
+    padding: 0;
+}
+.right-side li {
+    margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+    width: 0.5em; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+@media (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    body{
+        background-color: rgb(42, 8, 116);
+    }
+    .background {
+        height: 9%;
+        width: 110%;
+    }
+    #logo {
+        top: 7px;
+        left: 0px; 
+        height: 40px;
+        width: 40px;
+    }
+    .topnav {
+        margin-top: -25px;
+    }
+    .topnav li {
+        margin-right: 10px;
+    }
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .nav-link1 {
+        margin-left: 52px;
+        font-size: 12px;
+    }
+    .nav-link1:hover {
+        background-color: white; 
+        color: red;
+        padding: 10px
+    }
+    .linkforms{
+        font-size: 13px;
+        margin-top: 100px;
+        margin-left: 80px;
+        width: 28%;
+        height: 36%;
+        padding: 22px;
+    }
+    .linkforms p{
+        margin-top: -2px;
+        margin-left: -4px;
+        font-size: 13px;
+    }
+    .button3{
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-left: 10px;
+    }
+    .button33{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 8px;
+    }
+    .button333{
+        padding: 15px;
+        padding-left: 44px;
+        padding-right: 44px;
+        border-radius: 30px;
+        margin-left: 13px;
+    }
+    .hometext{
+        text-align: center;
+        margin-right: 360px;
+    }
+    .p1{
+        margin-top: 130px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .p11{
+        margin-left: -235px;
+        font-size: 18px;
+    }
+    .p2{
+        margin-left: -165px;
+        font-size: 14px;
+    }
+    .container1{
+        margin-top: -200px;
+        margin-left: -1px;
+        margin-bottom: 200px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1{
+        margin-top: 40px;
+        position:absolute;
+        width: 77%;
+        height: 150px;
+        margin-left: 70px;
+    }
+    .card2{
+        margin-top: 220px;
+        position:absolute;
+        width: 77%;
+        height: 150px;
+        margin-left: 70px;
+    }
+    .card3 {
+        margin-top: 400px;
+        position:relative;
+        width: 71%;
+        height: 145px;
+        margin-left: 70px;
+    }
+    .imp1 h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .imp1{
+        font-size: 14px;
+        margin-left: -70px;
+        margin-top: 30px;
+    }
+    .image-container img {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .eligibility-container h3 {
+        font-size: 22px;
+    }
+    .eligibility-container ul {
+        font-size: 16px;
+    }
+    .container1{
+        margin-right: -20px;
+    }
+    .container5{
+        margin-left: -20px;
+        padding-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container5 h1{
+        margin-left: 130px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .container5 p{
+        margin-left: 30px;
+    }
+    .block {
+        margin-left: 190px;
+        height: 150px;
+        color: white;
+    }
+    .loginquote{
+        float: none;
+        height: 230px;
+        margin: 20px 330px 0px 840px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 15px 0px 0px 830px;
+        width: 450px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .button2{
+        margin-left: 195px;
+    }
+    .close-button {
+        margin-top: 225px;
+        margin-right: 348px;
+        font-size: 28px;
+        color: red;
+        font-weight: bold;
+        z-index: 99999;
+    }
+    .NeedBloodpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+    }
+    .NeedBlood-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -380px;
+        margin-left: 400px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .needblood-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -150px;
+        z-index: 99999;
+        margin-right: 10px;
+        padding-top: 380px;
+    }
+    .mb-4{
+        margin-left: 220px!important
+    }
+    .needblood-form label, .needblood-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .needblood-form option, .needblood-form select,
+    .needblood-form input[type="text"], .needblood-form input[type="number"], .needblood-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-control{
+        width: 350px;
+        margin-left: 290px;
+    }
+    .button10{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close1 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: -10px;
+        margin-right: 20px;
+    }
+    .Registerpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        z-index: 9999;
+    }
+    .Register-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .regestration-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -250px;
+        z-index: 9999;
+        margin-right: 10px;
+        padding-top: 380px;
+        width: 900px;
+    }
+    .regestration-form label, .regestration-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .regestration-form option, .regestration-form select,
+    .regestration-form input[type="text"], .regestration-form input[type="number"], .regestration-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .button100{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close2 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .logintextbutton{
+        margin-left: 160px;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    body{
+        background-color: rgb(42, 8, 116);
+    }
+    .background {
+        height: 9%;
+        width: 110%;
+    }
+    #logo {
+        top: 7px;
+        left: 0px; 
+        height: 40px;
+        width: 40px;
+    }
+    .topnav {
+        margin-top: -25px;
+    }
+    .topnav li {
+        margin-right: 10px;
+    }
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .nav-link1 {
+        margin-left: 52px;
+        font-size: 18px;
+    }
+    .nav-link1:hover {
+        background-color: white; 
+        color: red;
+        padding: 10px
+    }
+    .linkforms{
+        font-size: 13px;
+        margin-top: 100px;
+        margin-left: 60px;
+        width: 31%;
+        height: 39%;
+        padding: 22px;
+    }
+    .linkforms p{
+        margin-top: -2px;
+        margin-left: -2px;
+        font-size: 15px;
+    }
+    .button3{
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+    }
+    .button33{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .button333{
+        padding: 15px;
+        padding-left: 44px;
+        padding-right: 44px;
+        border-radius: 30px;
+        margin-left: 18px;
+    }
+    .hometext{
+        text-align: center;
+        margin-right: 360px;
+    }
+    .p1{
+        margin-top: 130px;
+        margin-left: -32px;
+        font-size: 20px;
+    }
+    .p11{
+        margin-left: -305px;
+        font-size: 20px;
+    }
+    .p2{
+        margin-left: -245px;
+        font-size: 14px;
+    }
+    .container1{
+        margin-top: -200px;
+        margin-left: -1px;
+        margin-bottom: 200px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1{
+        margin-top: 40px;
+        position:absolute;
+        width: 77%;
+        height: 150px;
+        margin-left: 70px;
+    }
+    .card2{
+        margin-top: 220px;
+        position:absolute;
+        width: 77%;
+        height: 150px;
+        margin-left: 70px;
+    }
+    .card3 {
+        margin-top: 400px;
+        position:relative;
+        width: 73%;
+        height: 145px;
+        margin-left: 70px;
+    }
+    .imp1 h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .imp1{
+        font-size: 14px;
+        margin-left: -70px;
+        margin-top: 30px;
+    }
+    .image-container img {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .eligibility-container h3 {
+        font-size: 22px;
+    }
+    .eligibility-container ul {
+        font-size: 16px;
+    }
+    .container1{
+        margin-right: -20px;
+    }
+    .container5{
+        margin-left: -20px;
+        padding-left: 70px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container5 h1{
+        margin-left: 130px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .container5 p{
+        margin-left: -20px;
+        font-size: 18px;
+    }
+    .block {
+        margin-left: 190px;
+        height: 150px;
+        color: white;
+    }
+    .loginquote{
+        float: none;
+        height: 230px;
+        margin: 20px 330px 0px 840px;
+    }
+    .loginform{
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 15px 0px 0px 830px;
+        width: 450px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1{
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .button2{
+        margin-left: 195px;
+    }
+    .close-button {
+        margin-top: 225px;
+        margin-right: 348px;
+        font-size: 28px;
+        color: red;
+        font-weight: bold;
+        z-index: 99999;
+    }
+    .NeedBloodpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+    }
+    .NeedBlood-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -380px;
+        margin-left: 400px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .needblood-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -150px;
+        z-index: 99999;
+        margin-right: 10px;
+        padding-top: 380px;
+    }
+    .mb-4{
+        margin-left: 220px!important
+    }
+    .needblood-form label, .needblood-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .needblood-form option, .needblood-form select,
+    .needblood-form input[type="text"], .needblood-form input[type="number"], .needblood-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-control{
+        width: 350px;
+        margin-left: 290px;
+    }
+    .button10{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close1 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .Registerpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        z-index: 9999;
+    }
+    .Register-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .regestration-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -250px;
+        z-index: 9999;
+        margin-right: 10px;
+        padding-top: 380px;
+        width: 900px;
+    }
+    .regestration-form label, .regestration-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .regestration-form option, .regestration-form select,
+    .regestration-form input[type="text"], .regestration-form input[type="number"], .regestration-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .button100{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close2 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .logintextbutton{
+        margin-left: 160px;
+    }
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    body{
+        background-color: rgb(42, 8, 116);
+    }
+    .background {
+        height: 9%;
+        width: 110%;
+    }
+    #logo {
+        top: 7px;
+        left: 0px; 
+        height: 40px;
+        width: 40px;
+    }
+    .topnav {
+        margin-top: -20px;
+    }
+    .topnav li {
+        margin-right: 10px;
+    }
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .nav-link1 {
+        margin-left: 167px;
+        font-size: 18px;
+    }
+    .nav-link1:hover {
+        background-color: white; 
+        color: red;
+        padding: 10px
+    }
+    .linkforms{
+        font-size: 13px;
+        margin-top: 100px;
+        margin-left: 60px;
+        width: 31%;
+        height: 39%;
+        padding: 22px;
+    }
+  
+.linkforms p {
+    margin-top: -2px;
+    margin-left: -4px;
+    font-size: 15px;
+}
+
+.button3 {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.button33 {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.button333 {
+    padding: 15px;
+    padding-left: 44px;
+    padding-right: 44px;
+    border-radius: 30px;
+    margin-left: 22px;
+    font-size: 16px;
+}
+
+.hometext {
+    text-align: center;
+    margin-right: 360px;
+}
+
+.p1 {
+    margin-top: 130px;
+    margin-left: -78px;
+    font-size: 22px;
+}
+
+.p11 {
+    margin-left: -385px;
+    font-size: 22px;
+}
+
+.p2 {
+    margin-left: -355px;
+    font-size: 14px;
+}
+
+.container1 {
+    margin-top: -200px;
+    margin-left: -1px;
+    margin-bottom: 200px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    margin-top: 40px;
+    position: absolute;
+    width: 63%;
+    height: 200px;
+    margin-left: 90px;
+}
+
+.card2 {
+    margin-top: 270px;
+    position: absolute;
+    width: 63%;
+    height: 200px;
+    margin-left: 90px;
+}
+
+.card3 {
+    margin-top: 500px;
+    position: relative;
+    width: 165%;
+    height: 200px;
+    margin-left: 90px;
+}
+
+.imp1 h3 {
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.imp1 {
+    font-size: 18px;
+    margin-left: -70px;
+    margin-top: 30px;
+}
+
+.image-container img {
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+    margin-left: 180px;
+}
+
+.eligibility-container h3 {
+    font-size: 25px;
+}
+
+.eligibility-container ul {
+    font-size: 18px;
+}
+
+.container1 {
+    margin-right: -20px;
+}
+
+.container5 {
+    margin-left: -20px;
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container5 h1 {
+    margin-left: 320px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container5 p {
+    margin-left: 30px;
+}
+
+.block {
+    margin-left: 190px;
+    height: 150px;
+    color: white;
+}
+
+.loginquote {
+    float: none;
+    height: 230px;
+    margin: 20px 330px 0px 840px;
+}
+
+
+
+
+    .loginform {
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 15px 0px 0px 830px;
+        width: 450px;
+    }
+    
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    
+    .button1 {
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    
+    .button2 {
+        margin-left: 195px;
+    }
+    .close-button {
+        margin-top: 225px;
+        margin-right: 348px;
+        font-size: 28px;
+        color: red;
+        font-weight: bold;
+        z-index: 99999;
+    }
+    .NeedBloodpopup {
+        width: 92vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+    }
+    .NeedBlood-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .needblood-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -150px;
+        z-index: 99999;
+        margin-right: 10px;
+        padding-top: 380px;
+    }
+    .mb-4{
+        margin-left: 220px!important
+    }
+    .needblood-form label, .needblood-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .needblood-form option, .needblood-form select,
+    .needblood-form input[type="text"], .needblood-form input[type="number"], .needblood-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-control{
+        width: 350px;
+        margin-left: 290px;
+    }
+    .button10{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close1 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .Registerpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        z-index: 9999;
+    }
+    
+    .Register-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .regestration-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -250px;
+        z-index: 9999;
+        margin-right: 10px;
+        padding-top: 380px;
+        width: 900px;
+    }
+    .regestration-form label, .regestration-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .regestration-form option, .regestration-form select,
+    .regestration-form input[type="text"], .regestration-form input[type="number"], .regestration-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .button100{
+        margin-left: 390px;
+        width: 200px
+    }
+    .popup__close2 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .logintextbutton{
+        margin-left: 160px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    body{
+        background-color: rgb(42, 8, 116);
+    }
+    .background {
+        height: 9%;
+        width: 110%;
+    }
+    #logo {
+        top: 7px;
+        left: 0px; 
+        height: 40px;
+        width: 40px;
+    }
+    .topnav {
+        margin-top: -17px;
+    }
+    .topnav li {
+        margin-right: 10px;
+    }
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .nav-link1 {
+        margin-left: 292px;
+        font-size: 18px;
+    }
+    .nav-link1:hover {
+        background-color: white; 
+        color: red;
+        padding: 10px;
+    }
+    .linkforms {
+        font-size: 13px;
+        margin-top: 100px;
+        margin-left: 60px;
+        width: 31%;
+        height: 39%;
+        padding: 22px;
+    }
+    .linkforms p {
+        margin-top: -2px;
+        margin-left: -4px;
+        font-size: 18px;
+    }
+    .button3 {
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .button33 {
+        padding-left: 37px;
+        padding-right: 38px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .button333 {
+        padding: 15px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 30px;
+        margin-left: 33px;
+        font-size: 16px;
+    }
+    .hometext {
+        text-align: center;
+        margin-right: 360px;
+    }
+    .p1 {
+        margin-top: 130px;
+        margin-left: 5px;
+        font-size: 24px;
+    }
+    .p11 {
+        margin-left: -335px;
+        font-size: 24px;
+    }
+    .p2 {
+        margin-left: -285px;
+        font-size: 16px;
+    }
+    .container1 {
+        margin-top: -200px;
+        margin-left: -1px;
+        margin-bottom: 200px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1 {
+        margin-top: 40px;
+        position: absolute;
+        width: 63%;
+        height: 220px;
+        margin-left: 90px;
+    }
+    .card2 {
+        margin-top: 300px;
+        position: absolute;
+        width: 63%;
+        height: 220px;
+        margin-left: 90px;
+    }
+    .card3 {
+        margin-top: 560px;
+        position: relative;
+        width: 635px !important;
+        height: 220px;
+        margin-left: 90px;
+    }
+    .imp1 h3 {
+        margin-left: 20px;
+        font-size: 28px;
+    }
+    .imp1 {
+        font-size: 18px;
+        margin-left: -70px;
+        margin-top: 30px;
+    }
+    .image-container img {
+        margin-top: 150px;
+        width: 400px;
+        height: 400px;
+        margin-left: 180px;
+    }
+    .eligibility-container h3 {
+        font-size: 25px;
+    }
+    .eligibility-container ul {
+        font-size: 18px;
+    }
+    .container1 {
+        margin-right: -20px;
+    }
+    .container5 {
+        margin-left: -20px;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container5 h1 {
+        margin-left: 350px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .container5 p {
+        margin-left: 80px;
+    }
+    .block {
+        margin-left: 140px;
+        height: 150px;
+        color: white;
+    }
+    .loginquote {
+        float: none;
+        height: 230px;
+        margin: 20px 330px 0px 840px;
+    }
+    .loginform {
+        float: none;
+        padding: 15px 0px 10px 0px;
+        margin: 15px 0px 0px 830px;
+        width: 450px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 300px;
+        margin-left: 70px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 70px;
+    }
+    .button1 {
+        margin-left: 160px;
+        padding: 4px;
+        width: 120px;
+    }
+    .button2 {
+        margin-left: 195px;
+    }
+    .close-button {
+        margin-top: 225px;
+        margin-right: 348px;
+        font-size: 28px;
+        color: red;
+        font-weight: bold;
+        z-index: 99999;
+    }
+    .NeedBloodpopup {
+        width: 92vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+    }
+    .NeedBlood-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .needblood-form {
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -150px;
+        z-index: 99999;
+        margin-right: 10px;
+        padding-top: 380px;
+    }
+    .mb-4 {
+        margin-left: 220px!important;
+    }
+    .needblood-form label, .needblood-form input {
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .needblood-form option, .needblood-form select,
+    .needblood-form input[type="text"], .needblood-form input[type="number"], .needblood-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-control {
+        width: 350px;
+        margin-left: 290px;
+    }
+    .button10 {
+        margin-left: 360px;
+        width: 200px;
+    }
+    .popup__close1 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .Registerpopup {
+        width: 97vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        z-index: 9999;
+    }
+    .Register-popup-content {
+        max-height: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .regestration-form {
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -250px;
+        z-index: 9999;
+        margin-right: 10px;
+        padding-top: 380px;
+        width: 900px;
+    }
+    .regestration-form label, .regestration-form input {
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .regestration-form option, .regestration-form select,
+    .regestration-form input[type="text"], .regestration-form input[type="number"], .regestration-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 350px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .button100 {
+        margin-left: 390px;
+        width: 200px;
+    }
+    .popup__close2 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .logintextbutton {
+        margin-left: 160px;
+    }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+    ::-webkit-scrollbar {
+        width: 0.5em; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    body{
+        background-color: rgb(42, 8, 116);
+    }
+    .background {
+        height: 9%;
+        width: 110%;
+    }
+    #logo {
+        top: 0px;
+        left: 0px; 
+        height: 44px;
+        width: 44px;
+    }
+    .topnav {
+        margin-top: -13px;
+    }
+    .topnav li {
+        margin-right: 15px;
+    }
+    .topnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    .nav-link1 {
+        margin-left: 573px;
+        font-size: 15px;
+    }
+    .nav-link1:hover {
+        background-color: white; 
+        color: red;
+        padding: 10px
+    }
+    .linkforms{
+        font-size: 15px;
+        margin-top: 90px;
+        margin-left: 50px;
+        width: 30%;
+        height: 38%;
+        padding: 22px;
+    }
+    .linkforms p{
+        margin-top: -2px;
+        margin-left: 22px;
+        font-size: 18px;
+    }
+    .button3{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 45px;
+    }
+    .button33{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 45px;
+    }
+    .button333{
+        padding: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-radius: 30px;
+        margin-left: 45px;
+    }
+    .hometext{
+        text-align: center;
+        margin-right: 360px;
+    }
+    .p1{
+        margin-top: 130px;
+        margin-left: 10px;
+        font-size: 32px;
+    }
+    .p11{
+        margin-left: -430px;
+        font-size: 32px;
+    }
+    .p2{
+        margin-left: -420px;
+        font-size: 18px;
+    }
+    .container1{
+        margin-top: -200px;
+        margin-left: -1px;
+        margin-bottom: 200px;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1{
+        margin-top: 40px;
+        position:absolute;
+        width: 30%;
+        height: 250px;
+        margin-left: 52px;
+    }
+    .card2{
+        margin-top: 40px;
+        position:absolute;
+        width: 30%;
+        height: 250px;
+        margin-left: 460px;
+    }
+    .card3 {
+        margin-top: 40px;
+        position:relative;
+        width: 30%;
+        height: 250px;
+        margin-left: 870px;
+    }
+    .imp1 h3{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .imp1{
+        font-size: 18px;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+    .image-container img {
+        margin-top: 100px;
+        width: 500px;
+        height: 500px;
+        margin-left: 250px;
+    }
+    .eligibility-container h3 {
+        font-size: 28px;
+    }
+    .eligibility-container ul {
+        font-size: 17px;
+    }
+    .container1{
+        margin-right: -20px;
+    }
+    .container5{
+        margin-left: -80px;
+        padding-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container5 h1{
+        margin-left: 620px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .container5 p{
+        margin-left: 300px;
+    }
+    .block {
+        margin-left: 125px;
+        height: 150px;
+        color: white;
+    }
+    .loginquote{
+        float: left;
+        height: 230px;
+        margin: 20px 255px 0px 1220px;
+    }
+    .loginform{
+        float: right;
+        padding: 15px 0px 10px 0px;
+        margin: -230px 0px 0px 1650px;
+        width: 650px;
+    }
+    .login-form input[type="tel"],
+    .login-form input[type="password"] {
+        width: 340px;
+        margin-left: 150px;
+    }
+    .login-form label, .login-form input {
+        margin-left: 150px;
+    }
+    .button1{
+        margin-left: 260px;
+        padding: 8px;
+        width: 120px;
+    }
+    .button2{
+        margin-left: 285px;
+    }
+    .close-button {
+        margin-top: 225px;
+        margin-right: 18px;
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+        z-index: 99999;
+    }
+    .NeedBloodpopup {
+        width: 197vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        padding-right: 300px;
+    }
+    .NeedBlood-popup-content {
+        max-height: 1000px;
+        width: 40%;
+        height: 100%;
+        margin-top: -380px;
+        margin-left: -500px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 20px
+    }
+    .needblood-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -600px;
+        margin-top: -120px;
+        z-index: 9999;
+        margin-right: 10px;
+        padding-top: 380px;
+        width: 1800px;
+    }
+    .mb-4{
+        margin-top: -350px;
+        margin-left: 220px!important
+    }
+    .needblood-form label, .needblood-form input{
+        margin-top: -40px;
+        margin-left: 250px;
+        margin-bottom: 5px;
+    }
+    .needblood-form option, .needblood-form select,
+    .needblood-form input[type="text"], .needblood-form input[type="number"], .needblood-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 290px;
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .form-control{
+        width: 350px;
+        margin-left: 290px;
+    }
+    .button10{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close1 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .Registerpopup {
+        width: 93vw;
+        height: 100vh;
+        top: 10px;
+        text-decoration: none;
+        z-index: 9999;
+    }
+    .Register-popup-content {
+        max-height: 1000px;
+        width: 120%;
+        height: 100%;
+        margin-top: -750px;
+        margin-left: 20px;
+        top: 50%;
+        overflow-y: auto; 
+        border-radius: 20px;
+        padding-left: 50px
+    }
+    .regestration-form{
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-left: -300px;
+        margin-top: -250px;
+        z-index: 9999;
+        margin-right: -50px;
+        padding-top: 380px;
+        width: 1800px;
+    }
+    .regestration-form label, .regestration-form input{
+        margin-top: -4px;
+        margin-left: 290px;
+        margin-bottom: 5px;
+    }
+    .regestration-form option, .regestration-form select,
+    .regestration-form input[type="text"], .regestration-form input[type="number"], .regestration-form input[type="datetime-local"] {
+        border-radius: 3px;
+        margin-left: 250px;
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .button100{
+        margin-left: 360px;
+        width: 200px
+    }
+    .popup__close2 {
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 100%;
+        z-index: 9999;
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .logintextbutton{
+        margin-left: 160px;
+    }
+}

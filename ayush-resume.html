@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #000000;
+                color: #ffffff;
+            }
+    
+            #resume-container {
+                display: flex;
+            }
+    
+            #black-side {
+                width: 50%;
+                background-color: #000000;
+                padding: 30px;
+                height: max-content;
+            }
+    
+            #white-side {
+                width: 50%;
+                background-color: #ffffff;
+                padding: 30px;
+                color:black;
+            }
+    
+            #profile-pic {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+    
+            #skills,
+            #experiences {
+                margin-top: 20px;
+            }
+    
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+    
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                margin: 10px 0;
+            }
+    
+            #description {
+                margin-bottom: 20px;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            input[type="text"],
+            textarea {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+    
+            input[type="submit"] {
+                background-color: #000000;
+                color: #ffffff;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #333333;
+            }
+            .sectionedu {
+            margin-bottom: 20px;
+           
+           width: 100%;
+           height: 100%;
+           margin: 10px;
+        
+          }
+          .name {
+            font-size: 44px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:white;
+            
+          }
+          .sectionedu h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            background-color:white;
+           
+          }
+          .align-content{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 980px;
+                }
+                .wide{
+                letter-spacing: 4px;
+                }
+                .white{
+                background-color: #fff !important;
+                }
+                .dark-grey{
+                background-color: #616161 !important;
+                }
+                .content-padding{
+                padding-top: 16px !important;
+                padding-bottom: 16px !important;
+                color: wheat;
+                }
+                .wrapper{
+                width:200px;
+                height:200px;
+                position: relative;
+                margin: 25px auto;
+                overflow: hidden;
+                border-radius:50%;
+                border: 5px solid white;
+                }
+                .wrapper img{
+                position: relative;
+                transform:translate(-50%,50%);
+                left:50%;
+                top:50%;
+                width:100%;
+                height:auto;
+                transform: translate(-50%,-50%);
+                }
+
+
+                .splash-info {
+                    position: relative;
+                    z-index: 2;
+                    margin-top: -64px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-size:15px;
+                    font-weight:bold;
+                }
+                .social
+                {
+                  background-color:black;
+                  
+                  padding-left: 200px;
+                  display:flex;
+                }
+        </style>
+    </head>
+    
+    <body>
+        <div id="resume-container">
+            <div id="black-side">
+                <div class="splash-info">
+                    <div class="wrapper">
+                <img class="profile-pic" src="ayush-photo.jpg" alt="Profile Picture"> 
+                </div>
+                </div>
+                <h1>AYUSH Moningi</h1>
+                <p>Software Developer</p>
+        <section class="skills align-content" id="skills">
+            <h3 style="background-color: white;color:#000000">My Skills</h1>
+            <p class="skills-underline">__________________</p>
+            <p class="skills-underline1"></p>
+              <p class="wide" style="color:white">HTML</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:95%"></div>
+              </div>
+              <p class="wide"style="color:white">CSS</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:85%"></div>
+              </div>
+              <p class="wide"style="color:white">JavaScript</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:50%"></div>
+              </div>
+              <p class="wide"style="color:white">C program</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:90%"></div>
+              </div>
+              <p class="wide"style="color:white">Java</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:50%"></div>
+              </div><br>
+              <p class="wide"style="color:white">Python</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:80%"></div>
+              </div>
+              <p class="wide"style="color:white">Express js</p>
+              <div class="white">
+                <div class="dark-grey" style="height:28px;width:70%"></div>
+              </div>
+          </section>
+                <h2 style="background-color: white;color:#000000">Experience</h2>
+                <ul id="experiences">
+                    <li>Project of network pedastrian</li>
+                    <li>flutter development</li>
+                    <li>web development</li>
+                </ul>
+                <div class="sectionedu">
+                    <h2>Education</h2>
+                    <table>
+                      <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                      </tr>
+                      <tr>
+                        <td>Bachelor of Science in Computer Science(AIE)</td>
+                        <td>Amrita viswa vidyapettam</td>
+                        <td>2022-2023</td>
+                      </tr>
+                      <tr>
+                        <td>12th AP board</td>
+                        <td>Narayana</td>
+                        <td>2020-2022</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>10th ICSE board</td>
+                        <td>ST.VINCENT convent school</td>
+                        <td>2018-2020</td>
+                        
+                      </tr>
+                    </table>
+                    <br>
+                    <h1 style="background-color: white;color:#000000">Social</h1>
+                    <div class="social">
+                      
+                      
+                     <!-- Facebook -->
+                    
+                        <i class="fab fa-facebook-f fa-2x" style="color: #3b5998; padding-right: 10px;"></i>
+
+                        <!-- Twitter -->
+                        <i class="fab fa-twitter fa-2x" style="color: #55acee;padding-right: 10px;"></i>
+
+                        <!-- Google -->
+                        <i class="fab fa-google fa-2x" style="color: #dd4b39;padding-right: 10px;"></i>
+
+                        <!-- Instagram -->
+                        <i class="fab fa-instagram fa-2x" style="color: #ac2bac;padding-right: 10px;"></i>
+
+                        <!-- Linkedin -->
+                        <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;padding-right: 10px;"></i>
+
+                        <!-- Github -->
+                        <i class="fab fa-github fa-2x" style="color: #333333;padding-right: 10px;"></i>
+                        <!-- Whatsapp -->
+                        <i class="fab fa-whatsapp fa-2x" style="color: #25d366;padding-right: 10px;"></i>
+                    </div>
+
+                  </div>
+            </div>
+    
+            <div id="white-side">
+                <h2 style="background-color: grey;">Summary</h2>
+                <p>An adept software engineer with strong full-stack web development skills, proficient in HTML, CSS, JavaScript, and Python. I've delivered quality software aligned with client needs, specializing in React, Angular, Node.js, and Express. Collaborating across teams, I've launched diverse web apps, showcasing agility. Eager to stay current, I'm a quick learner thriving in dynamic environments. Adept at problem-solving and communication, I drive collaboration and results. I'm dedicated to code quality and seeking opportunities for impactful contributions.</p>
+                <h2 style="background-color: grey;">EMPLOYMENT HISTORY
+                    </h2>
+                   
+                <p id="description " >
+                  <p><strong>Sruthy Annad's Project</strong></p>
+                  <p style="color:grey">Network Pedestrian</p>
+                  Deep learning, particularly convolutional neural networks (CNNs), is widely used for pedestrian detection, automatically extracting features from images. The process involves training a CNN on annotated images to detect pedestrians in new images or video frames. Popular models like Faster R-CNN, YOLO, and SSD leverage deep convolutional layers for feature extraction and object localization. While these models enhance accuracy, challenges remain, including lighting, occlusions, and appearance variations. Ongoing research addresses these issues, advancing deep learning-based pedestrian detection.
+                  <p><strong>Ocean Net</strong></p>
+                  Started as junior architect, swiftly promoted. Led a team of two in end-to-end architectural design and construction services.
+    
+                <h2 style="background-color: grey;">Contact</h2>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

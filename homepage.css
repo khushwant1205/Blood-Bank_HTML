@@ -1,0 +1,136 @@
+.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh;
+            position: relative;
+            z-index: 999;
+        }
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .robot {
+            position: relative;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #robot-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .listening-indicator {
+            display: none;
+            position: absolute;
+            bottom: 40px; /* Adjusted the position */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px; /* Increased the width */
+            height: 40px; /* Increased the height */
+            border-radius: 20px; /* Increased the border-radius */
+            background-color: black;
+            animation: wave 2s ease-in-out infinite;
+        }
+
+        .listening-indicator span {
+            display: block;
+            float: left;
+            width: 140px; /* Increased the width of each span */
+            height: 100%;
+            background-color: black;
+            animation: wave-child 2s ease-in-out infinite;
+        }
+
+        #stopButton {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .loader {
+            border: 0 solid transparent;
+            border-radius: 10%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 43%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+        }
+
+        .loader::before,
+        .loader::after {
+            content: '';
+            border: 3px solid yellow;
+            border-radius: 60%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            animation: loader 2s linear infinite;
+            opacity: 0;
+        }
+
+        .loader::before {
+            animation-delay: 1s;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: scale(3);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes wave-child {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(30px); /* Increased the translateY value */
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        #instructions {
+            position: absolute;
+            bottom: 120px;
+            text-align: center;
+            margin-top: 20px;
+            color: antiquewhite;
+            width: 100%;
+        }
